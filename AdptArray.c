@@ -103,7 +103,7 @@ int GetAdptArraySize(PAdptArray array){
 void PrintDB(PAdptArray array){
   if(array->ArrElements!=NULL){
     for(int i=0; i<array->size;i++){
-      if(array->ArrElements[i]!=NULL){
+      if((array->ArrElements)[i]!=NULL){
         array->print(array->ArrElements[i]);
       }
     }
