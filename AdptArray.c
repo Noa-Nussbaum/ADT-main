@@ -1,3 +1,7 @@
+// Sources:
+// I used a file about ADT from one of the exercise classes last term
+// I also used the solutions from the C course test last term
+
 #include <string.h>
 #include "AdptArray.h"
 #include "book.h"
@@ -79,7 +83,7 @@ PElement GetAdptArrayAt(PAdptArray array, int index){
     return NULL;
   }
   PElement object;
-  
+
   if(array->ArrElements[index]!=NULL){
     object = array->copy(array->ArrElements[index]);
   }
