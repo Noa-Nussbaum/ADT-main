@@ -1,7 +1,3 @@
-// Sources:
-// I used a file about ADT from one of the exercise classes last term
-// I also used the solutions from the C course test last term
-
 #include <string.h>
 #include "AdptArray.h"
 #include "book.h"
@@ -83,7 +79,7 @@ PElement GetAdptArrayAt(PAdptArray array, int index){
     return NULL;
   }
   PElement object;
-
+  
   if(array->ArrElements[index]!=NULL){
     object = array->copy(array->ArrElements[index]);
   }
@@ -103,7 +99,7 @@ int GetAdptArraySize(PAdptArray array){
 void PrintDB(PAdptArray array){
   if(array->ArrElements!=NULL){
     for(int i=0; i<array->size;i++){
-      if((array->ArrElements)[i]!=NULL){
+      if(array->ArrElements[i]!=NULL){
         array->print(array->ArrElements[i]);
       }
     }
