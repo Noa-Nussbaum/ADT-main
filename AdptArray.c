@@ -1,3 +1,7 @@
+// Sources:
+// I used a file about ADT from one of the exercise classes last term
+// I also used the solutions from the C course test last term
+
 #include <string.h>
 #include "AdptArray.h"
 #include "book.h"
@@ -45,6 +49,9 @@ void DeleteAdptArray(PAdptArray array){
 }
 
 Result SetAdptArrayAt(PAdptArray array, int index, PElement element){
+  if(index<0){
+    return FAIL;
+  }
   // Create copy
   PElement newArray=NULL; 
   // If the index is greater than the current size, create larger array and copy existing elements
