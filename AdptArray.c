@@ -67,9 +67,7 @@ Result SetAdptArrayAt(PAdptArray array, int index, PElement element){
   }
 
   // Delete existing element at index
-  
-  // array->delete((array->ArrElements)[index]);
-  if((array->ArrElements)[index]!=NULL){
+    if((array->ArrElements)[index]!=NULL){
     array->delete((array->ArrElements)[index]);
   }
   // Put new element at index using copy function
@@ -98,7 +96,7 @@ PElement GetAdptArrayAt(PAdptArray array, int index){
 
 int GetAdptArraySize(PAdptArray array){
   if(array->ArrElements==NULL){
-    return -1;
+    return 0;
   }
   return array->size;
 }
