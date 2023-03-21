@@ -96,7 +96,7 @@ PElement GetAdptArrayAt(PAdptArray array, int index){
 
 int GetAdptArraySize(PAdptArray array){
   if(array->ArrElements==NULL){
-    return 0;
+    return -1;
   }
   return array->size;
 }
